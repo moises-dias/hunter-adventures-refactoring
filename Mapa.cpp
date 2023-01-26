@@ -47,7 +47,7 @@ Mapa::Mapa( int sX, int sY, char* nomeImg, int numPlat, int fase)
     plats[numPlataformas-1].getPos(1).setXY(3700, 2000);
     plats[numPlataformas-1].setTipo(2);
 
-    font = al_load_font("OpenSans.ttf", 16, 0);
+    font = al_load_font("Dados/Fonts/OpenSans.ttf", 16, 0);
 
     ID=1;
     permiteColisaoEnt=true;

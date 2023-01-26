@@ -21,8 +21,8 @@ Menu::~Menu()
 }
 void Menu::inicializa()
 {
-    fontMenu = al_load_font("moolbor_0.ttf", 80, 0);
-    fontRank = al_load_font("moolbor_0.ttf", 40, 0);
+    fontMenu = al_load_font("Dados/Fonts/moolbor_0.ttf", 80, 0);
+    fontRank = al_load_font("Dados/Fonts/moolbor_0.ttf", 40, 0);
     telaMenu=al_load_bitmap("Menu_Tela.png");
     cursor=al_load_bitmap("Menu_Cursor.png");
     string nomeA[] = {"MUSICA_MENU", "CURSOR_MUDAR", "CURSOR_SELECIONAR", "CURSOR_VOLTAR",
