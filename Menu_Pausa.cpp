@@ -118,9 +118,9 @@ void Menu_Pausa::desenha()
 }
 void Menu_Pausa::inicializa()
 {
-    botao = al_load_bitmap("Menu_Pausa.png");
-    cursor = al_load_bitmap("Menu_Cursor.png");
-    glow = al_load_bitmap("darkGlow2.png");
+    botao = al_load_bitmap("Dados/Images/Menu_Pausa.png");
+    cursor = al_load_bitmap("Dados/Images/Menu_Cursor.png");
+    glow = al_load_bitmap("Dados/Images/darkGlow2.png");
     string nome[] = {"CURSOR_MUDAR","CURSOR_NAO_PERMITIR", "CURSOR_SELECIONAR"};
     audioPausa.inicializaAudio(nome, 3);
 }

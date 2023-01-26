@@ -25,8 +25,8 @@ Fase_1::Fase_1(Lista_Entidades * listEnt, bool doisJ, Controle * control)
     iteP1 = (inimigos.getTipoIni())[4].inicio();
     iteP2 = (inimigos.getTipoIni())[5].inicio();
     ptrBV = new Barra_De_Vida*[1 + doisJog];
-    glow = al_load_bitmap("glow.png");
-    dGlow = al_load_bitmap("darkGlow2.png");
+    glow = al_load_bitmap("Dados/Images/glow.png");
+    dGlow = al_load_bitmap("Dados/Images/darkGlow2.png");
 
     timers= new ALLEGRO_TIMER*[1];
     timers[0] = al_create_timer(1.0/60);
@@ -342,7 +342,7 @@ void Fase_1::desenha()
 void Fase_1::inicializaFase(Controle * control)
 {
 
-    ptrM = new Mapa(10000, 420, "fase1.png", numPlat,1);
+    ptrM = new Mapa(10000, 420, "Dados/Images/fase1.png", numPlat,1);
 
     listE->incluiEntidade(static_cast<Entidade*>(ptrM));
     listE->setMapa(ptrM);

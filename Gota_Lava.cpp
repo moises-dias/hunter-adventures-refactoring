@@ -5,7 +5,7 @@ Gota_Lava::Gota_Lava()
 
 }
 Gota_Lava::Gota_Lava(Vetor_R2 posI) :
-    Projetil(52, 52, "Gota_Lava.png", 2)
+    Projetil(52, 52, "Dados/Images/Gota_Lava.png", 2)
 {
     /**PARAMETROS DO PROJETIL**/
     vidaBase = 1;

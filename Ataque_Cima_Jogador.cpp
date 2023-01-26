@@ -5,7 +5,7 @@ Ataque_Cima_Jogador::Ataque_Cima_Jogador()
 
 }
 Ataque_Cima_Jogador::Ataque_Cima_Jogador(Vetor_R2 posI):
-    Projetil(96,96, "Projeteis.png", 2)
+    Projetil(96,96, "Dados/Images/Projeteis.png", 2)
 {
 
     /**PARAMETROS DO PROJETIL**/

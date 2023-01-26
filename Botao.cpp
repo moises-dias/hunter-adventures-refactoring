@@ -20,7 +20,7 @@ Botao::~Botao()
 void Botao::inicializa(int i)
 {
     botaoJogar.setNumEstados(1);
-    botaoJogar.setNomeImg("imagemjogar.png");
+    botaoJogar.setNomeImg("Dados/Images/imagemjogar.png");
     botaoJogar.setSpriteX(300);
     botaoJogar.setSpriteY(100);
 

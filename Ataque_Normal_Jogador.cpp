@@ -4,7 +4,7 @@
 
 
 Ataque_Normal_Jogador::Ataque_Normal_Jogador(Vetor_R2 posI, int di, bool ve):
-    Projetil( 96, 96, "Projeteis.png", 2)
+    Projetil( 96, 96, "Dados/Images/Projeteis.png", 2)
 {
     /**PARAMETROS DO PROJETIL**/
     vidaBase = 100;

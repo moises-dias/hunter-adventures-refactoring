@@ -25,7 +25,7 @@ Morcego::Morcego(int ix,int iy)
 
     desenhaFrame.setSpriteX(52);
     desenhaFrame.setSpriteY(52);
-    desenhaFrame.setNomeImg("Morcego.png");
+    desenhaFrame.setNomeImg("Dados/Images/Morcego.png");
 
     desenhaFrame.setNumEstados(7);
 

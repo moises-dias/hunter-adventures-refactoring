@@ -70,7 +70,7 @@ Jogador::Jogador()
 
 }
 Jogador::Jogador(int nJ) :
-    Entidade(52,52,"Hunter.png", NUM_ESTADOS)
+    Entidade(52,52,"Dados/Images/Hunter.png", NUM_ESTADOS)
 {
     /**PARAMETROS DO JOGADOR**/
     vidaBase = 20000;
@@ -174,7 +174,7 @@ void Jogador::atualiza()
 
             estado = desenhaFrame.getEstado();
 
-            if (colisao[COLIDE_Y])/**Para o jogador em y se ele estiver colidindo com o chão ou uma plataforma**/
+            if (colisao[COLIDE_Y])/**Para o jogador em y se ele estiver colidindo com o chï¿½o ou uma plataforma**/
             {
                 pos.getVelocidade().setY(0);
                 pos.getAceleracao().setY(0);
@@ -256,7 +256,7 @@ void Jogador::atualiza()
 }
 void Jogador::movimentacao()
 {
-    /**REFERENTES A MOVIMENTAÇÂO HORIZONTAL**/
+    /**REFERENTES A MOVIMENTAï¿½ï¿½O HORIZONTAL**/
     if (teclas[RIGHT] && !desabilitaTeclas[RIGHT])
     {
         if (pos.getVelocidade().getX() < 6)
@@ -294,7 +294,7 @@ void Jogador::movimentacao()
             mudaEstado(VIRANDO_C);
         dir = 1;
     }
-    /**REFERENTES A MOVIMENTAÇÂO HORIZONTAL**/
+    /**REFERENTES A MOVIMENTAï¿½ï¿½O HORIZONTAL**/
 
     /**REFERENTES AO PULO E SE ABAIXAR**/
     if ((teclas[X] && !desabilitaTeclas[X]) && !teclas[DOWN])
@@ -436,7 +436,7 @@ void Jogador::ataques()
     /**REFERENTES AOS ATAQUES TERRESTRES**/
 
 
-    /**REFERENTES AOS ATAQUES AÉREOS**/
+    /**REFERENTES AOS ATAQUES Aï¿½REOS**/
     if (teclas[Z] && !colisao[COLIDE_Y] && !estadosAtaque(estado) && numAtaquesAereos < 3)
     {
 
@@ -452,7 +452,7 @@ void Jogador::ataques()
     {
         combo = true;
     }
-    /**REFERENTES AOS ATAQUES AÉREOS**/
+    /**REFERENTES AOS ATAQUES Aï¿½REOS**/
 
     /**REFERENTES AO COMBO**/
     if (combo)
@@ -583,7 +583,7 @@ void Jogador::atualizaComportamento()
 }
 void Jogador::atualizaColisoes()
 {
-    /**Para o jogador em x se ele estiver colidindo com o chão pela lateral**/
+    /**Para o jogador em x se ele estiver colidindo com o chï¿½o pela lateral**/
     if (colisao[COLIDE_XD] && pos.getVelocidade().getX() >0)
     {
         pos.getVelocidade().setX(0);

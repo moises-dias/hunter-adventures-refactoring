@@ -14,7 +14,7 @@ Fantasma::Fantasma(int ix,int iy)
 
     desenhaFrame.setSpriteX(96);
     desenhaFrame.setSpriteY(101);
-    desenhaFrame.setNomeImg("Fantasma.png");
+    desenhaFrame.setNomeImg("Dados/Images/Fantasma.png");
 
     desenhaFrame.setNumEstados(1);
     desenhaFrame.setGiraRot(false);

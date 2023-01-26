@@ -35,7 +35,7 @@ Chefao::Chefao(int ix,int iy)
 
     desenhaFrame.setSpriteX(200);
     desenhaFrame.setSpriteY(200);
-    desenhaFrame.setNomeImg("Chefao.png");
+    desenhaFrame.setNomeImg("Dados/Images/Chefao.png");
 
     desenhaFrame.setNumEstados(8);
 

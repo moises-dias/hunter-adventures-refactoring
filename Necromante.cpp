@@ -26,7 +26,7 @@ Necromante::Necromante(int ix,int iy)
 
     desenhaFrame.setSpriteX(52);
     desenhaFrame.setSpriteY(52);
-    desenhaFrame.setNomeImg("Necromante.png");
+    desenhaFrame.setNomeImg("Dados/Images/Necromante.png");
 
     desenhaFrame.setNumEstados(6);
 
