@@ -51,8 +51,8 @@ Jogo::Jogo():
     timer = al_create_timer(1.0 / FPS);
 
     eventQ = al_create_event_queue();
-    font26 = al_load_font("../Dados/Fonts/moolbor_0.ttf", 26, 0);
-    Entidade::font16 = al_load_font("../Dados/Fonts/LSANS.TTF", 16, 0);
+    font26 = al_load_font("../Data/Fonts/moolbor_0.ttf", 26, 0);
+    Entidade::font16 = al_load_font("../Data/Fonts/LSANS.TTF", 16, 0);
 
     al_clear_to_color(al_map_rgb(0,0,0));
     al_draw_text(Entidade::font16, al_map_rgb(255,255,255), 0,720 - al_get_font_line_height(Entidade::font16),

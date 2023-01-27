@@ -32,13 +32,13 @@ void Carregar_Salvar::reseta()
         rankingI.close();
 
     if (!saveI[0].is_open())
-        saveI[0].open("../Dados/Save/save0.txt");
+        saveI[0].open("../Data/Save/save0.txt");
     if (!saveI[1].is_open())
-        saveI[1].open("../Dados/Save/save1.txt");
+        saveI[1].open("../Data/Save/save1.txt");
     if (!saveI[2].is_open())
-        saveI[2].open("../Dados/Save/save2.txt");
+        saveI[2].open("../Data/Save/save2.txt");
     if (!rankingI.is_open())
-        rankingI.open("../Dados/Save/ranking.txt");
+        rankingI.open("../Data/Save/ranking.txt");
 
 }
 void Carregar_Salvar::salvaLista(Lista_Generica<Entidade*> * listE, bool persistir)
@@ -60,7 +60,7 @@ void Carregar_Salvar::salvaLista(Lista_Generica<Entidade*> * listE, bool persist
         iteI = indIni.inicio();
         deletaSave(saveAtual, false);
         char *num = "0123456789";
-        string s1 = "../Dados/Save/save";
+        string s1 = "../Data/Save/save";
         s1 += num[saveAtual];
         s1 += ".txt";
         saveO.open(s1.c_str());
@@ -127,7 +127,7 @@ void Carregar_Salvar::deletaSave(int s, bool reseta)
     if (saveO.is_open())
         saveO.close();
     char *num = "0123456789";
-    string s1 = "../Dados/Save/save";
+    string s1 = "../Data/Save/save";
     s1 += num[s];
     s1 += ".txt";
     saveO.open(s1.c_str());
@@ -143,7 +143,7 @@ void Carregar_Salvar::limpaLista()
     if (saveO.is_open())
         saveO.close();
     char *num = "0123456789";
-    string s1 = "../Dados/Save/save";
+    string s1 = "../Data/Save/save";
     s1 += num[saveAtual];
     s1 += ".txt";
     saveO.open(s1.c_str());
@@ -268,7 +268,7 @@ bool Carregar_Salvar::getDoisJogadores()
 void Carregar_Salvar::inicializaSave()
 {
     char *num = "0123456789";
-    string s1 = "../Dados/Save/save";
+    string s1 = "../Data/Save/save";
     s1 += num[saveAtual];
     s1 += ".txt";
     saveO.open(s1.c_str());
@@ -367,7 +367,7 @@ void Carregar_Salvar::salvaRanking()
         score.retira_frente();
         nomeScore.retira_frente();
     }
-    rankingO.open("../Dados/Save/ranking.txt");
+    rankingO.open("../Data/Save/ranking.txt");
     while(nomeScore.tamanho())
         rankingO << nomeScore.retira_traz() <<  '#' << score.retira_traz() << '#' << endl;
     rankingO.close();

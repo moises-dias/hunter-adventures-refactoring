@@ -5,7 +5,7 @@ Chuva_Fogo::Chuva_Fogo()
 
 }
 Chuva_Fogo::Chuva_Fogo(Vetor_R2 posI) :
-    Projetil(14, 62, "../Dados/Images/Entities/Chuva_Chefao.png", 2)
+    Projetil(14, 62, "../Data/Images/Entities/Chuva_Chefao.png", 2)
 {
     /**PARAMETROS DO PROJETIL**/
     vidaBase = 1000000;

@@ -21,7 +21,7 @@ void Botao::inicializa(int i)
 {
     botaoJogar.setNumEstados(1);
     // TODO: check what this image is.
-    botaoJogar.setNomeImg("../Dados/Images/imagemjogar.png");
+    botaoJogar.setNomeImg("../Data/Images/imagemjogar.png");
     botaoJogar.setSpriteX(300);
     botaoJogar.setSpriteY(100);
 

@@ -36,8 +36,8 @@ Fase_3::Fase_3(Lista_Entidades * listEnt, bool doisJ, Controle * control)
     iteP1 = (inimigos.getTipoIni())[3].inicio();
     ang = 0;
     ptrBV = new Barra_De_Vida*[1 + doisJog];
-    glow = al_load_bitmap("../Dados/Images/Misc/glow.png");
-    dGlow = al_load_bitmap("../Dados/Images/Misc/darkGlow2.png");
+    glow = al_load_bitmap("../Data/Images/Misc/glow.png");
+    dGlow = al_load_bitmap("../Data/Images/Misc/darkGlow2.png");
 
 
     timers= new ALLEGRO_TIMER*[1];

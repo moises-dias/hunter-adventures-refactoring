@@ -23,8 +23,8 @@ Fase_2::Fase_2(Lista_Entidades * listEnt, bool doisJ, Controle * control)
     iteP1 = (inimigos.getTipoIni())[4].inicio();
     iteP2 = (inimigos.getTipoIni())[5].inicio();
     ptrBV = new Barra_De_Vida*[1 + doisJog];
-    glow = al_load_bitmap("../Dados/Images/Misc/glow.png");
-    dGlow = al_load_bitmap("../Dados/Images/Misc/darkGlow2.png");
+    glow = al_load_bitmap("../Data/Images/Misc/glow.png");
+    dGlow = al_load_bitmap("../Data/Images/Misc/darkGlow2.png");
 
     timers= new ALLEGRO_TIMER*[1];
     timers[0] = al_create_timer(1.0/60);

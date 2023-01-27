@@ -70,7 +70,7 @@ Jogador::Jogador()
 
 }
 Jogador::Jogador(int nJ) :
-    Entidade(52,52,"../Dados/Images/Entities/Hunter.png", NUM_ESTADOS)
+    Entidade(52,52,"../Data/Images/Entities/Hunter.png", NUM_ESTADOS)
 {
     /**PARAMETROS DO JOGADOR**/
     vidaBase = 20000;

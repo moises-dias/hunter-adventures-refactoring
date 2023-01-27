@@ -21,7 +21,7 @@ Mapa::Mapa( int sX, int sY, char* nomeImg, int numPlat, int fase)
     int numImgs = sX/1000;
     mapas = new ALLEGRO_BITMAP* [numImgs];
 
-    string s1, s2 = "../Dados/Images/Stage/Fase", s3 = "_000", s4 = ".png";
+    string s1, s2 = "../Data/Images/Stage/Fase", s3 = "_000", s4 = ".png";
     char *num = "0123456789";
     for (int i = 0; i < 10; i++)
     {
@@ -47,7 +47,7 @@ Mapa::Mapa( int sX, int sY, char* nomeImg, int numPlat, int fase)
     plats[numPlataformas-1].getPos(1).setXY(3700, 2000);
     plats[numPlataformas-1].setTipo(2);
 
-    font = al_load_font("../Dados/Fonts/OpenSans.ttf", 16, 0);
+    font = al_load_font("../Data/Fonts/OpenSans.ttf", 16, 0);
 
     ID=1;
     permiteColisaoEnt=true;

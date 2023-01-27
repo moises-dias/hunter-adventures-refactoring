@@ -14,7 +14,7 @@ Audio::~Audio()
 }
 void Audio::inicializaAudio(string * nomes, int n)
 {
-    string sAux1, sAux2 = "../Dados/Audio/", sAux3 = ".ogg";
+    string sAux1, sAux2 = "../Data/Audio/", sAux3 = ".ogg";
     for (int i = 0; i < n; i++)
     {
         nomeAudio.inclui_frente(nomes[i]);

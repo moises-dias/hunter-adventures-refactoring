@@ -22,7 +22,7 @@ Slime::Slime(int ix,int iy)
 
     desenhaFrame.setSpriteX(52);
     desenhaFrame.setSpriteY(52);
-    desenhaFrame.setNomeImg("../Dados/Images/Entities/Slime.png");
+    desenhaFrame.setNomeImg("../Data/Images/Entities/Slime.png");
 
     desenhaFrame.setNumEstados(9);
 

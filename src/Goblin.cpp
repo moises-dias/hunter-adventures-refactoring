@@ -27,7 +27,7 @@ Goblin::Goblin(int ix,int iy)
 
     desenhaFrame.setSpriteX(52);
     desenhaFrame.setSpriteY(52);
-    desenhaFrame.setNomeImg("../Dados/Images/Entities/Goblin.png");
+    desenhaFrame.setNomeImg("../Data/Images/Entities/Goblin.png");
 
     desenhaFrame.setNumEstados(7);
 
