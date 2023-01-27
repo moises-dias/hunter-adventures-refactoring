@@ -26,7 +26,7 @@ Golem::Golem(int ix,int iy)
 
     desenhaFrame.setSpriteX(200);
     desenhaFrame.setSpriteY(200);
-    desenhaFrame.setNomeImg("../Dados/Images/Golem.png");
+    desenhaFrame.setNomeImg("../Dados/Images/Entities/Golem.png");
 
     desenhaFrame.setNumEstados(4);
 

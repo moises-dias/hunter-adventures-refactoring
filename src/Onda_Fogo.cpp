@@ -5,7 +5,7 @@ Onda_Fogo::Onda_Fogo()
 
 }
 Onda_Fogo::Onda_Fogo(Vetor_R2 posI) :
-    Projetil(200, 200, "../Dados/Images/Onda_Chefao.png", 1)
+    Projetil(200, 200, "../Dados/Images/Entities/Onda_Chefao.png", 1)
 {
     /**PARAMETROS DO PROJETIL**/
     vidaBase = 1000000;

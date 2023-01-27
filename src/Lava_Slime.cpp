@@ -23,7 +23,7 @@ Lava_Slime::Lava_Slime(int ix,int iy)
 
     desenhaFrame.setSpriteX(52);
     desenhaFrame.setSpriteY(52);
-    desenhaFrame.setNomeImg("../Dados/Images/lava_slime.png");
+    desenhaFrame.setNomeImg("../Dados/Images/Entities/lava_slime.png");
 
     desenhaFrame.setNumEstados(9);
 

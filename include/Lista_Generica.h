@@ -50,6 +50,8 @@ public:
         }
         E getInfo()
         {
+            // TODO: enter on a stage, leave using the menu and entering
+            // another stage will break the code right here.
             return info;
         }
 

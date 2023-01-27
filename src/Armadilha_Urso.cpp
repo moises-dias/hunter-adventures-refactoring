@@ -14,7 +14,7 @@ Armadilha_Urso::Armadilha_Urso(int ix,int iy)
 
     desenhaFrame.setSpriteX(52);
     desenhaFrame.setSpriteY(52);
-    desenhaFrame.setNomeImg("../Dados/Images/Armadilha_Urso.png");
+    desenhaFrame.setNomeImg("../Dados/Images/Entities/Armadilha_Urso.png");
 
     desenhaFrame.setNumEstados(3);  /** 0=normal, 1=disparado, 2=fechado **/
     desenhaFrame.setGiraRot(false);

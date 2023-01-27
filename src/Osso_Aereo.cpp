@@ -6,7 +6,7 @@ Osso_Aereo::Osso_Aereo()
 
 }
 Osso_Aereo::Osso_Aereo(Vetor_R2 posI, Vetor_R2 velI, float aceleracao) :
-    Projetil(96, 96, "../Dados/Images/Projeteis.png", 1)
+    Projetil(96, 96, "../Dados/Images/Entities/Projeteis.png", 1)
 {
     /**PARAMETROS DO PROJETIL**/
     vidaBase = 1;

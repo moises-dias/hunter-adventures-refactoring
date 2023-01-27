@@ -5,7 +5,7 @@ Caveira_Flamejante::Caveira_Flamejante()
 
 }
 Caveira_Flamejante::Caveira_Flamejante(Vetor_R2 posI) :
-    Projetil(96, 96, "../Dados/Images/Caveira_Flamejante.png", 1)
+    Projetil(96, 96, "../Dados/Images/Entities/Caveira_Flamejante.png", 1)
 {
 
     /**PARAMETROS DO PROJETIL**/

@@ -14,7 +14,7 @@ void Barra_De_Vida::inicializa()
 {
     nJogador = ptrJ->getNumJogador();
     vidaI = vida = ptrJ->getVida();
-    icon = al_load_bitmap("../Dados/Images/iconeHunter.png");
+    icon = al_load_bitmap("../Dados/Images/Misc/iconeHunter.png");
     if (!nJogador)
     {
         pos.getEspaco().setXY(10,10);

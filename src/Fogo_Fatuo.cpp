@@ -31,7 +31,7 @@ Fogo_Fatuo::Fogo_Fatuo(int ix,int iy)
 
     desenhaFrame.setSpriteX(52);
     desenhaFrame.setSpriteY(52);
-    desenhaFrame.setNomeImg("../Dados/Images/Fogo_Fatuo.png");
+    desenhaFrame.setNomeImg("../Dados/Images/Entities/Fogo_Fatuo.png");
 
     desenhaFrame.setNumEstados(4);
 
@@ -95,7 +95,7 @@ Fogo_Fatuo::Fogo_Fatuo(int ix,int iy, bool t)
 
     desenhaFrame.setSpriteX(52);
     desenhaFrame.setSpriteY(52);
-    desenhaFrame.setNomeImg("../Dados/Images/Fogo_Fatuo.png");
+    desenhaFrame.setNomeImg("../Dados/Images/Entities/Fogo_Fatuo.png");
 
     desenhaFrame.setNumEstados(4);
 

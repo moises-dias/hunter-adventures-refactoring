@@ -22,7 +22,7 @@ Poeira::Poeira(Vetor_R2 p, Vetor_R2 b, int t, bool rot, int d, bool desaparece, 
     alpha = 1;
     vD = vDes;
 
-    desenhaFrame.setNomeImg("../Dados/Images/poeira.png");
+    desenhaFrame.setNomeImg("../Dados/Images/Misc/poeira.png");
     desenhaFrame.setSpriteX(64);
     desenhaFrame.setSpriteY(64);
     borda = b;

@@ -5,7 +5,7 @@ Bola_Fogo::Bola_Fogo()
 
 }
 Bola_Fogo::Bola_Fogo(Vetor_R2 posI) :
-    Projetil(52, 52, "../Dados/Images/Gota_Lava.png", 1)
+    Projetil(52, 52, "../Dados/Images/Entities/Gota_Lava.png", 1)
 {
     /**PARAMETROS DO PROJETIL**/
     vidaBase = 1000000;

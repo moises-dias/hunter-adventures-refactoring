@@ -5,7 +5,7 @@ Coluna_Fogo::Coluna_Fogo()
 
 }
 Coluna_Fogo::Coluna_Fogo(Vetor_R2 posI) :
-    Projetil(100, 420, "../Dados/Images/Coluna_Chefe.png", 2)
+    Projetil(100, 420, "../Dados/Images/Entities/Coluna_Chefe.png", 2)
 {
     /**PARAMETROS DO PROJETIL**/
     vidaBase = 1000000;

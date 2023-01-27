@@ -21,7 +21,7 @@ Mapa::Mapa( int sX, int sY, char* nomeImg, int numPlat, int fase)
     int numImgs = sX/1000;
     mapas = new ALLEGRO_BITMAP* [numImgs];
 
-    string s1, s2 = "../Dados/Fase/Fase", s3 = "_000", s4 = ".png";
+    string s1, s2 = "../Dados/Images/Stage/Fase", s3 = "_000", s4 = ".png";
     char *num = "0123456789";
     for (int i = 0; i < 10; i++)
     {

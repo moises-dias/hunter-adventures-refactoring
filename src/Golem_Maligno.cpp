@@ -27,7 +27,7 @@ Golem_Maligno::Golem_Maligno(int ix,int iy)
 
     desenhaFrame.setSpriteX(200);
     desenhaFrame.setSpriteY(200);
-    desenhaFrame.setNomeImg("../Dados/Images/Golem_Maligno.png");
+    desenhaFrame.setNomeImg("../Dados/Images/Entities/Golem_Maligno.png");
     al_convert_mask_to_alpha(desenhaFrame.getImagem(),al_map_rgba(0,0,0,5));
 
     desenhaFrame.setNumEstados(4);

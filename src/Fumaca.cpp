@@ -11,7 +11,7 @@ Fumaca::Fumaca()
         colisao[i] = false;
     dir = rand()%2;
 
-    desenhaFrame.setNomeImg("../Dados/Images/Fumaca.png");
+    desenhaFrame.setNomeImg("../Dados/Images/Misc/Fumaca.png");
     desenhaFrame.setSpriteX(96);
     desenhaFrame.setSpriteY(96);
     desenhaFrame.setNumEstados(1);
