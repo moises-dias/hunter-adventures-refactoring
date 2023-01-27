@@ -7,9 +7,10 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${workspaceFolder}/*.cpp",
+                "${workspaceFolder}/src/*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
+                "--include-directory=${workspaceFolder}/include/",
                 "-lallegro",
                 "-lallegro_main",
                 "-lallegro_audio",
