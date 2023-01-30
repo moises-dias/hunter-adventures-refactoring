@@ -2,7 +2,7 @@
 #define VETOR_R2_H
 
 
-
+// TODO: rename to coordinates
 class Vetor_R2
 {
     public:

@@ -458,39 +458,41 @@ void Lista_Entidades::deletaListaEntidade()
 }
 void Lista_Entidades::atualiza()
 {
-    Entidade * ent = NULL;
-    Inimigo * ptrI = NULL;
-    Projetil * ptrP = NULL;
+    Entidade * entity = NULL;
+    Inimigo * enemyPointer = NULL;
+    Projetil * projectilePointer = NULL;
     Lista_Generica<Entidade*>::Iterador ite;
     ite = listaE.inicio();
 
+    // TODO: remove index i, for will iterate only on the iterator
     for(int i = 0 ; i < listaE.tamanho(); ite++, i++)
     {
+        entity = (*ite);
 
-        ent = (*ite);
+        int entity_x_relative_position = entity->getPos().getEspaco().getX() - ptrMapa->getPos().getEspaco().getX();
+        int entity_y_relative_position = entity->getPos().getEspaco().getY();
 
-        if (ent->getID() == 1 || ent->getID() == 8 || ent->getID() == 64 ||
-                ((ent->getPos().getEspaco().getX() - ptrMapa->getPos().getEspaco().getX()) <= 1350 &&
-                 (ent->getPos().getEspaco().getX() - ptrMapa->getPos().getEspaco().getX()) >= -150))
+        bool entity_is_visible_x_axis = (entity_x_relative_position <= 1350 && entity_x_relative_position >= -150);
+        bool entity_is_visible_y_axis = (entity_y_relative_position <= 840);
+        bool entity_left_behind_x_axis = (entity_x_relative_position < -1000);
+
+        if (entity->getID() == PLATFORM || entity->getID() == PLAYER_ATTACK || entity->getID() == OBSTACLE || entity_is_visible_x_axis)
         {
-            ent->atualiza();
+            entity->atualiza();
         }
-        else if ((ent->getID() == 16) &&
-                 (((ent->getPos().getEspaco().getX() - ptrMapa->getPos().getEspaco().getX()) > 1350 &&
-                   (ent->getPos().getEspaco().getX() - ptrMapa->getPos().getEspaco().getX()) < -150 ) ||
-                  ent->getPos().getEspaco().getY() > 840))
+
+        //TODO: adding the condition !entity_is_visible_x_axis here will stop enemies from spawning
+        else if ((entity->getID() == ENEMY_ATTACK) && (!entity_is_visible_y_axis))
         {
-            ptrP = static_cast<Projetil*> (ent);
-            ptrP->resetaEntidade();
-            ptrP->setFuncionando(false);
+            projectilePointer = static_cast<Projetil*> (entity);
+            projectilePointer->resetaEntidade();
+            projectilePointer->setFuncionando(false);
         }
-        else if (ent->getID() == 4 &&
-                 (((ent->getPos().getEspaco().getX() - ptrMapa->getPos().getEspaco().getX()) < -1000)||
-                  ent->getPos().getEspaco().getY() > 840))
+        else if (entity->getID() == ENEMY && (entity_left_behind_x_axis || !entity_is_visible_y_axis))
         {
-            ptrI = static_cast<Inimigo*> (ent);
-            ptrI->resetaEntidade();
-            ptrI->setFuncionando(false);
+            enemyPointer = static_cast<Inimigo*> (entity);
+            enemyPointer->resetaEntidade();
+            enemyPointer->setFuncionando(false);
         }
     }
 
